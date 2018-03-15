@@ -3,10 +3,32 @@ import random
 
 start_time = time.time()
 
+
+def choose_ex():
+    exercises = {
+        'ex_one': "http://codingbat.com/prob/p129125",
+        'ex_two': "http://codingbat.com/prob/p135815",
+        'ex_three': "http://codingbat.com/prob/p137202",
+        'ex_four': "http://codingbat.com/prob/p116620",
+        'ex_five': "http://codingbat.com/prob/p119867",
+    }
+
+    if random_assign == 1:
+        return exercises['ex_one']
+    elif random_assign == 2:
+        return exercises['ex_two']
+    elif random_assign == 3:
+        return exercises['ex_three']
+    elif random_assign == 4:
+        return exercises['ex_four']
+    elif random_assign == 5:
+        return exercises['ex_five']
+
 i = 0
 
-z = 1000000000000000000000000
-while (i < z):
+END_VALUE = 1000000000000000000000000
+
+while i < END_VALUE:
     print("//\n"
           " //\n"
           "  //\n"
